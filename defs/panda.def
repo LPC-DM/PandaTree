@@ -525,6 +525,7 @@ triggers/HLTBits
 #include "TFile.h"
 #include "TKey.h"
 #include "HLTObjectStore.h"
+#include "PandaTree/Framework/interface/RRNG.h"
 
 {Event>EventBase}
 npv/s
@@ -538,7 +539,7 @@ secondaryVertices/SecondaryVertexCollection(64)
 tracks/PackedTrackCollection(1024)
 superClusters/SuperClusterCollection(64)
 electrons/ElectronCollection(32)
-muons/MuonCollection(32)
+muons/MuonCollection(32)  // sortedby=pt
 taus/TauCollection(64)
 photons/PhotonCollection(32)
 chsAK4Jets/JetCollection(64)
